@@ -31,10 +31,10 @@ cube.data[i] = np.nan
 cube.data = cube.data/(60*60*24)
 cube.units = 'kg m^-2 s^-1'
 
+# call harmonise.cube2netcdf function to regrid and save as new cube
 harmonise.cube2netcdf(cube, 'evspsbl', startyr=1979, nyear=41,
                       #remove_cell_methods=True,
                       product='era5_test', regrid=True, latlon_bounds=True,
                       #time_bounds=False,
                       regrid_cube=regrid_cube)
-
 

@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Sep  3 16:15:39 2018
-
-Convert CMIP model realizations to ensemble mean
-
-@author: earjba
-"""
-
 import iris
 from cube_funcs import get_dates 
 from iris.experimental.equalise_cubes import equalise_attributes
@@ -40,7 +32,6 @@ def iris_read(data_path, standard_name, short_name=None):
     return(cubes)
 
     
-#%%
 # change path to location of data
 # data should be sorted into folders by model name
 path = '/nfs/see-fs-02_users/earjba/b0122/cmip6/'
@@ -351,4 +342,3 @@ for model in models:
         print(outpath)          
         iris.save(ensemble_mean, outpath)
     
-

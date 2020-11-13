@@ -18,7 +18,7 @@ path = '/nfs/a68/gyjcab/datasets/CHIRPS/'
 cube = iris.load_cube(path + 'chirps-v2.0.monthly_1981_2020.nc')
 print(cube)
 
-# if needed convert units (in mm/month)
+# if needed convert units
 #cube.units = 'kg m-2 month-1'
 #cube.convert_units('kg m-2 day-1')
 

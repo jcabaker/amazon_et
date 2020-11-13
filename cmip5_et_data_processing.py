@@ -246,4 +246,3 @@ for model in models:
         print(outpath)         
         iris.save(ensemble_mean, outpath)
     
-

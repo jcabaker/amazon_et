@@ -24,3 +24,4 @@ nyear = len(cubes)/12
 harmonise.cube2netcdf(cubes, 'sis', startyr=1982, nyear=nyear,
                       product='clara_test', regrid=True, latlon_bounds=True,
                       merge=True, regrid_cube=regrid_cube, units='W m^-2')
+

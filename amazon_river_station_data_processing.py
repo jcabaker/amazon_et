@@ -85,7 +85,6 @@ def sort_river_data(df, val='Media', basin_name=None):
     return(df_trim)
 #%%
 # Set path to river data
-# Change path to data
 riv_path = '/Users/jess/Documents/river_data/'
 
 filedirs = ['Aripuana_Prainha_Velha_15830000',
@@ -190,3 +189,5 @@ for key in riv_data.keys():
     plt.plot(test)
     plt.title(key)
     test.to_csv(riv_path + key + '_flow_data_sorted_test.csv')
+
+

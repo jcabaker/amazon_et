@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # merge modis hdf datia
 #
 #   modis_merge input_directory output_directory

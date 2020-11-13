@@ -33,4 +33,3 @@ cube = lwe*scale.data
 harmonise.cube2netcdf(cube, 'lwe', startyr=2002, nyear=19,
                       product='test_grace_jpl_mascon', regrid=True, latlon_bounds=True,
                       regrid_cube=regrid_cube, time_bounds=False, name=name)
-

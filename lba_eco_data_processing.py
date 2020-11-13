@@ -47,4 +47,3 @@ k83 = read_lba_flux_data(path,'STM_K83_QAQC')
 rja = read_lba_flux_data(path,'RON_RJA_QAQC')
 pdg = read_lba_flux_data(path,'SP_PDG_QAQC')
 
-

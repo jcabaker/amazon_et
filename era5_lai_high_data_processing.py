@@ -19,6 +19,7 @@ path = '/nfs/a68/gyjcab/datasets/ERA5/'
 cube = iris.load_cube(path + 'lai_high_veg_on_single_level.nc')
 print(cube)
 
+# call harmonise.cube2netcdf function to regrid and save as new cube
 harmonise.cube2netcdf(cube, 'lai_high_veg', startyr=1979, nyear=41,
                       #remove_cell_methods=True,
                       product='era5_test', regrid=True, latlon_bounds=True,

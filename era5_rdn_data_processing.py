@@ -30,6 +30,7 @@ for t in range(len(dates)):
 # convert cube data units
 cube.units = 'W/m2'
 
+# call harmonise.cube2netcdf function to regrid and save as new cube
 harmonise.cube2netcdf(cube, 'rdn', startyr=1979, nyear=41,
                       #remove_cell_methods=True,
                       product='era5_test', regrid=True, latlon_bounds=True,

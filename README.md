@@ -14,10 +14,3 @@ Sequence for MODIS ET scripts
 2. modis_et_hdf2tiff_merge.sh  # this bash script calls modis_et_merge (must change path to this in modis_et_hdf2tiff_merge.py), modis_et_merge in turn calls modis_et_update_tif.py so this must be in the same directory
 3. modis_et_final_processing.py  # this python script loops over files from each year, and for each 8-day file adds date, converts units, converts to monthly data
 4. harmonise_modis_et.py  # this script harmonises MODIS ET data to single data cube of desired resolution
-
-Sequence for MODIS LAI scripts
-1. make_dirs_modis_lai.sh  # this bash script sorts modis raw data into directories by year and day of year
-2. modis_lai_hdf2tiff_merge.sh  # this bash script calls modis_lai_merge (must change path to this in modis_lai_hdf2tiff_merge.py), modis_lai_merge in turn calls modis_lai_update_tif.py so this must be in the same directory
-3. modis_lai_final_processing.py  # this python script loops over files from each year, and for each 8-day file adds date, converts units, converts to monthly data
-4. harmonise_modis_lai.py  # this script harmonises MODIS Et data to single data cube of desired resolution
-

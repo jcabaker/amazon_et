@@ -38,7 +38,7 @@ Baker, J.C.A., Garcia-Carreras, L., Buermann, W., Marsham, J.H., Gloor, M., Sun,
 1. lba_eco_data_processing.py
 
 ## Scripts to extract basin monthly-mean values of ET, leaf area index, precipitation and radiation
-1. get_catchment_balance_ET_all_basins.py --> get catchment-balance data for Amazon and sub-basins
+1. get_catchment_balance_ET_all_basins.py # this script calculates catchment-balance ET for Amazon and sub-basins
 2. get_satellite_et_all_basins_interannual.py
 3. get_satellite_lai_all_basins_interannual.py
 4. get_satellite_pre_all_basins_interannual.py
